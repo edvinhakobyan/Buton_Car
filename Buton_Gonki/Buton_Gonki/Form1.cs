@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Buton_Gonki
 {
+  
     public delegate void help(Button x);
     public partial class Form1 : Form
     {
@@ -17,10 +18,14 @@ namespace Buton_Gonki
         Random random = new Random();
         My_But[] but_arr;
         help h;
-             
+
+        
+
 
         public Form1()
         {
+            var y = new { name = "", ege = 12 };
+
             InitializeComponent();
             h = new help(Motion);
             but_arr = new My_But[] { button1, button2, button3, button4, button5, button6 };
